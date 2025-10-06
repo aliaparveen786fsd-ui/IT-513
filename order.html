@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering System - Menu</title>
+    <link rel="stylesheet" href="styles.css"></link>
+</head>
+<body>
+    <header>
+        <h1>Delish Bites Restaurant</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Food Order Form</h2>
+            <form action="order-success.html" method="get">
+                
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    <p>
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+                    <p>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </p>
+                    <p>
+                        <label for="address">Delivery Address:</label><br>
+                        <textarea id="address" name="address" rows="3" cols="50" required></textarea>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Menu Selection</legend>
+                    <p>
+                        <label>Main Course:</label><br>
+                        <input type="checkbox" id="pizza" name="main-course" value="Pizza">
+                        <label for="pizza">Pizza</label><br>
+                        
+                        <input type="checkbox" id="burger" name="main-course" value="Burger">
+                        <label for="burger">Burger</label><br>
+
+                        <input type="checkbox" id="pasta" name="main-course" value="Pasta">
+                        <label for="pasta">Pasta</label><br>
+
+                        <input type="checkbox" id="biryani" name="main-course" value="Biryani">
+                        <label for="biryani">Biryani</label>
+                    </p>
+
+                    <p>
+                        <label>Beverages:</label><br>
+                        <input type="radio" id="tea" name="beverage" value="Tea">
+                        <label for="tea">Tea</label><br>
+                        
+                        <input type="radio" id="coffee" name="beverage" value="Coffee">
+                        <label for="coffee">Coffee</label><br>
+
+                        <input type="radio" id="juice" name="beverage" value="Juice">
+                        <label for="juice">Juice</label><br>
+
+                        <input type="radio" id="none" name="beverage" value="None" checked>
+                        <label for="none">No Drink</label>
+                    </p>
+
+                    <p>
+                        <label for="quantity">Number of Servings:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="20" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Payment & Delivery</legend>
+                    <p>
+                        <label for="payment-method">Payment Method:</label>
+                        <select id="payment-method" name="payment-method" required>
+                            <option value="cash">Cash on Delivery</option>
+                            <option value="card">Credit/Debit Card</option>
+                            <option value="online">Online Transfer</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="delivery-time">Preferred Delivery Time:</label>
+                        <input type="time" id="delivery-time" name="delivery-time">
+                    </p>
+                    <p>
+                        <label for="notes">Additional Notes:</label><br>
+                        <textarea id="notes" name="notes" rows="4" cols="50" placeholder="Any special instructions..."></textarea>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <input type="submit" value="Place Order">
+                    <input type="reset" value="Clear Form">
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Delish Bites Restaurant. All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <p>This page demonstrates an HTML5 structure for a food ordering form without CSS styling.</p>
+    </footer>
+</body>
+</html>
